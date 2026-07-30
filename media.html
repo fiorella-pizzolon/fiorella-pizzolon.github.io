@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media — Fiorella Pizzolon</title>
+<meta name="description" content="Talks, videos and interviews featuring Fiorella Pizzolon.">
+<meta name="author" content="Fiorella Pizzolon">
+<meta property="og:title" content="Media — Fiorella Pizzolon">
+<meta property="og:description" content="Talks, videos and interviews featuring Fiorella Pizzolon.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="mono">FP</span>Fiorella Pizzolon</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav class="nav-links" id="nav-links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="education.html">Education</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="ra-positions.html">RA Positions</a>
+      <a href="research.html">Research</a>
+      <a href="media.html" aria-current="page">Media</a>
+      <a href="misc.html">Misc.</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <div class="wrap page-head">
+      <p class="eyebrow">Talks, press & interviews</p>
+      <h1>Media</h1>
+  </div>
+
+  <div class="wrap">
+    <section>
+      <h2 class="section-title">Presentations</h2>
+      <div class="card">
+        <h3><a href="https://www.youtube.com/watch?v=QuwGoFJnQx4">Política monetaria-fiscal óptima y composición de la deuda soberana externa</a></h3>
+        <p class="meta mb-0">Primera Jornada de Economía del Banco Central de Paraguay &middot; 27 August 2021 &middot; video</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Interviews</h2>
+      <div class="card">
+        <h3><a href="https://facs.ort.edu.uy/novedades/la-carrera-esta-muy-bien-pensada-41156">&ldquo;La carrera está muy bien pensada&rdquo;</a></h3>
+        <p class="meta mb-0">Novedades, Universidad ORT Uruguay — Facultad de Administración y Ciencias Sociales &middot; 27 July 2015</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://facs.ort.edu.uy/41366/36/%E2%80%9Cla-carrera-que-elegi-me-abrio-el-camino%E2%80%9D.html">&ldquo;La carrera que elegí me abrió el camino&rdquo;</a></h3>
+        <p class="meta mb-0">Novedades, Universidad ORT Uruguay — Facultad de Administración y Ciencias Sociales &middot; 14 February 2013</p>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <strong style="color:var(--ink)">Fiorella Pizzolon</strong><br>
+      Department of Economics, Hamilton College<br>
+      <a href="mailto:pizzolon@hamilton.edu">pizzolon@hamilton.edu</a>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="https://www.hamilton.edu/academics/our-faculty/directory/faculty-detail/fiorella-pizzolon">Hamilton profile</a>
+    </nav>
+  </div>
+</footer>
+<script>
+(function () {
+  var b = document.querySelector('.nav-toggle'),
+      n = document.getElementById('nav-links');
+  if (!b || !n) return;
+  b.addEventListener('click', function () {
+    var open = n.classList.toggle('open');
+    b.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+})();
+// If an image hosted elsewhere fails to load, fall back to the local copy.
+(function () {
+  Array.prototype.forEach.call(document.querySelectorAll('img[data-fallback]'), function (img) {
+    img.addEventListener('error', function handler() {
+      img.removeEventListener('error', handler);
+      img.src = img.getAttribute('data-fallback');
+    });
+    if (img.complete && !img.naturalWidth) img.src = img.getAttribute('data-fallback');
+  });
+})();
+</script>
+</body>
+</html>
