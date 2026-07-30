@@ -1,4 +1,4 @@
-# fiorellapizzolon.github.io
+# fiorella-pizzolon.github.io
 
 Personal academic website — Fiorella Pizzolon, Assistant Professor of Economics, Hamilton College.
 
