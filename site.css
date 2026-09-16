@@ -81,6 +81,17 @@ dd .diss .title a:hover { color: var(--accent); }
 dd .diss .committee { white-space: nowrap; overflow-x: auto; }
 @media (max-width: 30rem) { dl > div { grid-template-columns: 1fr; gap: 0.1rem; } }
 
+/* Collapsible sections (Research positions): one row per employer, open with + */
+details.section { margin: 0; border-bottom: 1px solid var(--rule); }
+details.section:first-of-type { border-top: 1px solid var(--rule); }
+details.section > summary { display: flex; align-items: center; gap: 0.6rem; width: 100%; padding: 0.9rem 0; color: var(--ink); font-size: 1.05rem; font-weight: 600; }
+details.section > summary span { margin-left: auto; color: var(--muted); font-weight: 400; font-size: 0.88rem; white-space: nowrap; }
+@media (max-width: 30rem) { details.section > summary span { display: none; } }
+details.section > p { margin: 0 0 1rem 1.85rem; font-size: 0.97rem; }
+dl.compact { margin: 0 0 0.75rem 1.85rem; }
+dl.compact > div { grid-template-columns: 6.5rem 1fr; padding: 0.4rem 0; border-bottom: 0; font-size: 0.97rem; }
+@media (max-width: 30rem) { dl.compact { margin-left: 0; } dl.compact > div { grid-template-columns: 1fr; } }
+
 /* CV */
 .cv-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 0.5rem 0 1.5rem; }
 .button { display: inline-block; padding: 0.55rem 1rem; border-radius: 4px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 500; font-size: 0.95rem; }
