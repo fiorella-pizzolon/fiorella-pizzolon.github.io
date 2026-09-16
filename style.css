@@ -40,7 +40,7 @@ h3 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.25rem; line-height
 header.hero { padding: 0.5rem 0 1.5rem; display: grid; grid-template-columns: 1fr; gap: 1.5rem; align-items: start; }
 @media (min-width: 40rem) { header.hero { grid-template-columns: 1fr 9.5rem; gap: 2.5rem; } }
 header.hero img { width: 7.5rem; aspect-ratio: 1/1; object-fit: cover; border-radius: 50%; }
-@media (min-width: 40rem) { header.hero img { width: 100%; border-radius: 4px; order: 2; } }
+@media (min-width: 40rem) { header.hero img { width: 100%; border-radius: 50%; order: 2; } }
 .role { margin: 0; color: var(--muted); }
 .bio { margin: 1.25rem 0 0; max-width: 34rem; }
 .contact { margin: 1.5rem 0 0; color: var(--muted); font-size: 0.95rem; border-top: 1px solid var(--rule); padding-top: 1.25rem; }
@@ -68,7 +68,7 @@ ol li { margin: 0 0 0.85rem; }
 
 /* Year / entry lists: year column on the left, stacked on phones */
 dl { margin: 0.5rem 0 0; }
-dl div { display: grid; grid-template-columns: 7rem 1fr; gap: 0.25rem 1rem; padding: 0.6rem 0; border-bottom: 1px solid var(--rule); }
+dl > div { display: grid; grid-template-columns: 7rem 1fr; gap: 0.25rem 1rem; padding: 0.6rem 0; border-bottom: 1px solid var(--rule); }
 dt { color: var(--muted); font-size: 0.92rem; margin: 0; padding-top: 0.1rem; }
 dd { margin: 0; }
 dd .inst { display: block; color: var(--muted); font-size: 0.93rem; }
@@ -76,7 +76,10 @@ dd .diss { margin: 0.75rem 0 0; padding-left: 0.85rem; border-left: 2px solid va
 dd .diss p { margin: 0.2rem 0; }
 dd .diss .label { color: var(--muted); font-size: 0.9rem; }
 dd .diss .title { font-weight: 600; }
-@media (max-width: 30rem) { dl div { grid-template-columns: 1fr; gap: 0.1rem; } }
+dd .diss .title a { color: var(--ink); }
+dd .diss .title a:hover { color: var(--accent); }
+dd .diss .committee { white-space: nowrap; overflow-x: auto; }
+@media (max-width: 30rem) { dl > div { grid-template-columns: 1fr; gap: 0.1rem; } }
 
 /* CV */
 .cv-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 0.5rem 0 1.5rem; }
