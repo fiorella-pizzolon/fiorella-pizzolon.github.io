@@ -88,11 +88,12 @@ dd .diss .title { font-weight: 600; }
 .cv-preview { max-width: 22rem; border: 1px solid var(--rule); border-radius: 4px; }
 @media (min-width: 48rem) { .cv-preview { display: none; } }
 
-/* Photo gallery (More page) */
-.gallery { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: 2rem; }
-.gallery img { width: 100%; border-radius: 4px; }
+/* Photo gallery (More page): one column on phones, two columns from tablets up */
+.gallery { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; grid-template-columns: 1fr; gap: 1.75rem 1.5rem; }
+@media (min-width: 36rem) { .gallery { grid-template-columns: 1fr 1fr; } }
 .gallery figure { margin: 0; }
-.gallery figcaption { margin-top: 0.5rem; font-size: 0.93rem; color: var(--muted); }
-.gallery figcaption b { color: var(--ink); font-weight: 600; margin-right: 0.4rem; }
+.gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; background: var(--rule); }
+.gallery figcaption { margin-top: 0.5rem; font-size: 0.88rem; line-height: 1.5; color: var(--muted); }
+.gallery figcaption b { display: block; color: var(--ink); font-weight: 600; margin-bottom: 0.1rem; }
 
 footer { border-top: 1px solid var(--rule); padding: 1.25rem 0 2rem; font-size: 0.85rem; color: var(--muted); }
