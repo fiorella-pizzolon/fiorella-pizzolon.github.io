@@ -89,6 +89,9 @@ details.section > summary span { margin-left: auto; color: var(--muted); font-we
 @media (max-width: 30rem) { details.section > summary span { display: none; } }
 details.section > p { margin: 0 0 1rem 1.85rem; font-size: 0.97rem; }
 dl.compact { margin: 0 0 0.75rem 1.85rem; }
+ul.plain { margin: 0 0 1rem 1.85rem; padding-left: 1.1rem; font-size: 0.97rem; }
+ul.plain li { margin: 0.25rem 0; }
+@media (max-width: 30rem) { ul.plain { margin-left: 0; } }
 dl.compact > div { grid-template-columns: 6.5rem 1fr; padding: 0.4rem 0; border-bottom: 0; font-size: 0.97rem; }
 @media (max-width: 30rem) { dl.compact { margin-left: 0; } dl.compact > div { grid-template-columns: 1fr; } }
 
