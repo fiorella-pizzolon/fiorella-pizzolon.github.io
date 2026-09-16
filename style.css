@@ -91,6 +91,10 @@ dd .diss .committee { white-space: nowrap; overflow-x: auto; }
 .cv-preview { max-width: 22rem; border: 1px solid var(--rule); border-radius: 4px; }
 @media (min-width: 48rem) { .cv-preview { display: none; } }
 
+/* Embedded video (Media page): keeps 16:9 shape at any width */
+.video { margin: 0.75rem 0 1.5rem; max-width: 36rem; aspect-ratio: 16 / 9; background: var(--rule); border-radius: 4px; overflow: hidden; }
+.video iframe { width: 100%; height: 100%; border: 0; display: block; }
+
 /* Photo gallery (More page): one column on phones, two columns from tablets up */
 .gallery { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; grid-template-columns: 1fr; gap: 1.75rem 1.5rem; }
 @media (min-width: 36rem) { .gallery { grid-template-columns: 1fr 1fr; } }
