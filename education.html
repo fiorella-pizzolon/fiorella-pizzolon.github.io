@@ -9,170 +9,36 @@
   <meta property="og:title" content="Education — Fiorella Pizzolon">
   <meta property="og:description" content="Education of Fiorella Pizzolon: Ph.D. and M.A. in Economics, University of Virginia; B.S. Economics with Honors, Universidad ORT.">
   <meta property="og:type" content="profile">
+  <meta property="og:image" content="https://fiorella-pizzolon.github.io/assets/photos/headshot.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #ffffff;
-      --ink: #1c1c1c;
-      --muted: #5a5a5a;
-      --rule: #e2e2e2;
-      --accent: #1f4a6e;
-      --accent-soft: #eef3f7;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #161616;
-        --ink: #ececec;
-        --muted: #a8a8a8;
-        --rule: #333;
-        --accent: #8fb8dc;
-        --accent-soft: #1f2a33;
-      }
-    }
-
-    * { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
-      font-size: clamp(1.05rem, 0.95rem + 0.4vw, 1.2rem);
-      line-height: 1.6;
-    }
-    a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-    a:hover { text-decoration-thickness: 2px; }
-    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
-
-    .wrap { width: min(100% - 2.5rem, 42rem); margin: 0 auto; }
-
-    nav { border-bottom: 1px solid var(--rule); position: sticky; top: 0; background: var(--bg); z-index: 1; }
-    nav ul {
-      list-style: none; margin: 0; padding: 0.75rem 0;
-      display: flex; gap: 1.25rem; overflow-x: auto; white-space: nowrap;
-      -webkit-overflow-scrolling: touch; scrollbar-width: none;
-    }
-    nav ul::-webkit-scrollbar { display: none; }
-    nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
-    nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
-
-    main { padding: 2.5rem 0 3rem; }
-    h1 {
-      font-size: clamp(2rem, 1.5rem + 2.5vw, 2.9rem);
-      font-weight: 600; line-height: 1.1; margin: 0 0 1.5rem; letter-spacing: -0.01em;
-    }
-
-    /* Degree list: year column beside the entry, stacked on phones */
-    dl { margin: 0; border-top: 1px solid var(--rule); }
-    dl div {
-      display: grid; grid-template-columns: 6.5rem 1fr; gap: 0.25rem 1rem;
-      padding: 1rem 0; border-bottom: 1px solid var(--rule);
-    }
-    dt { color: var(--muted); font-size: 0.92rem; margin: 0; padding-top: 0.15rem; }
-    dd { margin: 0; }
-    dd strong { font-weight: 600; }
-    dd .inst { display: block; color: var(--muted); font-size: 0.95rem; }
-    dd .diss { margin: 0.75rem 0 0; padding-left: 0.85rem; border-left: 2px solid var(--rule); font-size: 0.97rem; }
-    dd .diss p { margin: 0.2rem 0; }
-    dd .diss .label { color: var(--muted); font-size: 0.9rem; }
-    dd .diss .title { font-weight: 600; }
-    details { margin: 0.5rem 0 0; }
-    summary {
-      cursor: pointer; list-style: none; color: var(--accent);
-      font-size: 0.95rem; padding: 0.3rem 0; display: inline-flex; align-items: center; gap: 0.5rem;
-      -webkit-user-select: none; user-select: none;
-    }
-    summary::-webkit-details-marker { display: none; }
-    summary::before {
-      content: "+"; display: inline-block; width: 1.25rem; height: 1.25rem; line-height: 1.2rem;
-      text-align: center; border: 1px solid currentColor; border-radius: 3px; font-size: 0.95rem;
-    }
-    details[open] summary::before { content: "\2212"; }
-    summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
-    details p { margin: 0.5rem 0 0.25rem; max-width: 36rem; font-size: 0.95rem; }
-    @media (max-width: 30rem) {
-      dl div { grid-template-columns: 1fr; gap: 0.1rem; }
-    }
-
-    footer { border-top: 1px solid var(--rule); padding: 1.25rem 0 2rem; font-size: 0.85rem; color: var(--muted); }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <nav aria-label="Site">
-    <div class="wrap">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="education.html" aria-current="page">Education</a></li>
-        <li><a href="ra-positions.html">Research positions</a></li>
-        <li><a href="media.html">Media</a></li>
-        <li><a href="misc.html">Misc.</a></li>
-      </ul>
-    </div>
-  </nav>
-
+  <nav aria-label="Site"><div class="wrap"><ul><li><a href="index.html">Home</a></li><li><a href="research.html">Research</a></li><li><a href="cv.html">CV</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="education.html" aria-current="page">Education</a></li><li><a href="ra-positions.html">Research positions</a></li><li><a href="media.html">Media</a></li><li><a href="misc.html">More</a></li></ul></div></nav>
   <main class="wrap" id="main">
-    <h1>Education</h1>
 
+    <h1>Education</h1>
     <dl>
-      <div>
-        <dt>May 2023</dt>
-        <dd>
-          <strong>Ph.D., Economics</strong>
-          <span class="inst">University of Virginia</span>
-          <div class="diss">
-            <p class="label">Dissertation, defended April 2023</p>
-            <p class="title">Monetary and Fiscal Policy and Debt Structure in Small Open Economies</p>
-            <p class="label">Committee: Prof. Eric Leeper, Prof. Eric Young, Prof. Ana Fostel and Prof. Felipe Saffie</p>
-            <p class="label"><a href="https://doi.org/10.18130/c1p7-2v30">Full text (UVA Libra, doi:10.18130/c1p7-2v30)</a></p>
-            <details>
-              <summary>Abstract</summary>
-              <p>In the past two decades, emerging economies have registered a reduction in the share of sovereign debt denominated in foreign currency and an extension in its maturity. First, I study how these changes affect the optimal monetary and fiscal policy. I derive analytical results using a commitment framework. A higher share of debt denominated in local currency increases the reliance on variations in inflation to hedge against fiscal stress, which in turn increases with the maturity. Additionally, it reduces the relative exposure to foreign shocks. Second, I study the differences in currency composition across countries, focusing on Latin America. In this case I use a time-consistency framework, to capture the large shares of debt denominated in foreign currency observed in the data. I find that large external debt-to-GDP ratios, long debt duration, and low inflation costs encourage more borrowing in inflation-indexed bonds and can explain the larger share of inflation-indexed debt in Uruguay compared to other Latin American countries.</p>
-            </details>
-          </div>
-        </dd>
-      </div>
-      <div>
-        <dt>May 2018</dt>
-        <dd>
-          <strong>M.A., Economics</strong>
-          <span class="inst">University of Virginia</span>
-        </dd>
-      </div>
-      <div>
-        <dt>2014</dt>
-        <dd>
-          <strong>M.S., Economics</strong> (selected courses)
-          <span class="inst">Universidad de Montevideo, Uruguay</span>
-        </dd>
-      </div>
-      <div>
-        <dt>2011</dt>
-        <dd>
-          <strong>Diploma in Quantitative Methods in Applied Economics and Finance</strong>
-          <span class="inst">Universidad ORT, Uruguay</span>
-        </dd>
-      </div>
-      <div>
-        <dt>May 2010</dt>
-        <dd>
-          <strong>B.S., Economics</strong>, with Honors
-          <span class="inst">Universidad ORT, Uruguay</span>
-        </dd>
-      </div>
+      <div><dt>May 2023</dt><dd>
+        <strong>Ph.D., Economics</strong><span class="inst">University of Virginia</span>
+        <div class="diss">
+          <p class="label">Dissertation, defended April 2023</p>
+          <p class="title">Monetary and Fiscal Policy and Debt Structure in Small Open Economies</p>
+          <p class="label">Committee: Prof. Eric Leeper, Prof. Eric Young, Prof. Ana Fostel and Prof. Felipe Saffie</p>
+          <p class="label"><a href="https://doi.org/10.18130/c1p7-2v30">Full text (UVA Libra, doi:10.18130/c1p7-2v30)</a></p>
+          <details><summary>Abstract</summary>
+            <p>In the past two decades, emerging economies have registered a reduction in the share of sovereign debt denominated in foreign currency and an extension in its maturity. First, I study how these changes affect the optimal monetary and fiscal policy. I derive analytical results using a commitment framework. A higher share of debt denominated in local currency increases the reliance on variations in inflation to hedge against fiscal stress, which in turn increases with the maturity. Additionally, it reduces the relative exposure to foreign shocks. Second, I study the differences in currency composition across countries, focusing on Latin America. In this case I use a time-consistency framework, to capture the large shares of debt denominated in foreign currency observed in the data. I find that large external debt-to-GDP ratios, long debt duration, and low inflation costs encourage more borrowing in inflation-indexed bonds and can explain the larger share of inflation-indexed debt in Uruguay compared to other Latin American countries.</p>
+          </details>
+        </div>
+      </dd></div>
+      <div><dt>May 2018</dt><dd><strong>M.A., Economics</strong><span class="inst">University of Virginia</span></dd></div>
+      <div><dt>2014</dt><dd><strong>M.S., Economics</strong> (selected courses)<span class="inst">Universidad de Montevideo, Uruguay</span></dd></div>
+      <div><dt>2011</dt><dd><strong>Diploma in Quantitative Methods in Applied Economics and Finance</strong><span class="inst">Universidad ORT, Uruguay</span></dd></div>
+      <div><dt>May 2010</dt><dd><strong>B.S., Economics</strong>, with Honors<span class="inst">Universidad ORT, Uruguay</span></dd></div>
     </dl>
   </main>
-
-  <footer>
-    <div class="wrap">
-      Fiorella Pizzolon · <a href="mailto:pizzolon@hamilton.edu">pizzolon@hamilton.edu</a> · <a href="https://www.hamilton.edu/academics/our-faculty/directory/faculty-detail/fiorella-pizzolon">Hamilton College profile</a>
-    </div>
-  </footer>
-
+  <footer><div class="wrap">Fiorella Pizzolon · <a href="mailto:pizzolon@hamilton.edu">pizzolon@hamilton.edu</a> · <a href="https://www.hamilton.edu/academics/our-faculty/directory/faculty-detail/fiorella-pizzolon">Hamilton College profile</a></div></footer>
 </body>
 </html>

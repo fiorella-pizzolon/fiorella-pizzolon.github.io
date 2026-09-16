@@ -9,121 +9,16 @@
   <meta property="og:title" content="Research — Fiorella Pizzolon">
   <meta property="og:description" content="Working papers and publications by Fiorella Pizzolon on sovereign debt, monetary and fiscal policy, and household heterogeneity.">
   <meta property="og:type" content="profile">
+  <meta property="og:image" content="https://fiorella-pizzolon.github.io/assets/photos/headshot.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #ffffff;
-      --ink: #1c1c1c;
-      --muted: #5a5a5a;
-      --rule: #e2e2e2;
-      --accent: #1f4a6e;
-      --accent-soft: #eef3f7;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #161616;
-        --ink: #ececec;
-        --muted: #a8a8a8;
-        --rule: #333;
-        --accent: #8fb8dc;
-        --accent-soft: #1f2a33;
-      }
-    }
-
-    * { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
-      font-size: clamp(1.05rem, 0.95rem + 0.4vw, 1.2rem);
-      line-height: 1.6;
-    }
-    a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-    a:hover { text-decoration-thickness: 2px; }
-    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
-
-    .wrap { width: min(100% - 2.5rem, 42rem); margin: 0 auto; }
-
-    nav { border-bottom: 1px solid var(--rule); position: sticky; top: 0; background: var(--bg); z-index: 1; }
-    nav ul {
-      list-style: none; margin: 0; padding: 0.75rem 0;
-      display: flex; gap: 1.25rem; overflow-x: auto; white-space: nowrap;
-      -webkit-overflow-scrolling: touch; scrollbar-width: none;
-    }
-    nav ul::-webkit-scrollbar { display: none; }
-    nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
-    nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
-
-    main { padding: 2.5rem 0 3rem; }
-    h1 {
-      font-size: clamp(2rem, 1.5rem + 2.5vw, 2.9rem);
-      font-weight: 600; line-height: 1.1; margin: 0 0 0.4rem; letter-spacing: -0.01em;
-    }
-    .lede { margin: 0 0 2rem; color: var(--muted); }
-    h2 {
-      font-size: 1.35rem; font-weight: 600; margin: 2.5rem 0 0.75rem;
-      padding-bottom: 0.4rem; border-bottom: 1px solid var(--rule);
-    }
-    h3 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.25rem; line-height: 1.35; }
-    .meta { margin: 0; color: var(--muted); font-size: 0.92rem; }
-    .meta a { white-space: nowrap; }
-
-    /* Collapsible abstracts: native <details>, so they work without JavaScript and on any phone */
-    details { margin: 0.5rem 0 0; }
-    summary {
-      cursor: pointer; list-style: none; color: var(--accent);
-      font-size: 0.95rem; padding: 0.3rem 0; display: inline-flex; align-items: center; gap: 0.5rem;
-      -webkit-user-select: none; user-select: none;
-    }
-    summary::-webkit-details-marker { display: none; }
-    summary::before {
-      content: "+"; display: inline-block; width: 1.25rem; height: 1.25rem; line-height: 1.2rem;
-      text-align: center; border: 1px solid currentColor; border-radius: 3px; font-size: 0.95rem;
-    }
-    details[open] summary::before { content: "−"; }
-    summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
-    details p { margin: 0.5rem 0 0.75rem; max-width: 38rem; font-size: 0.98rem; }
-    .presented { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.92rem; }
-
-    ol { padding-left: 1.4rem; margin: 0.75rem 0; }
-    ol li { margin: 0 0 0.85rem; }
-    ol li p { margin: 0; }
-    .note { color: var(--muted); font-size: 0.92rem; }
-
-    /* Year lists (presentations, discussions): a narrow year column that collapses on phones */
-    dl { margin: 0.75rem 0 0; }
-    dl div { display: grid; grid-template-columns: 6rem 1fr; gap: 0.25rem 1rem; padding: 0.5rem 0; border-bottom: 1px solid var(--rule); }
-    dt { color: var(--muted); font-size: 0.92rem; margin: 0; }
-    dd { margin: 0; }
-    @media (max-width: 30rem) {
-      dl div { grid-template-columns: 1fr; gap: 0.1rem; }
-    }
-
-    footer { border-top: 1px solid var(--rule); padding: 1.25rem 0 2rem; font-size: 0.85rem; color: var(--muted); }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <nav aria-label="Site">
-    <div class="wrap">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="research.html" aria-current="page">Research</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="ra-positions.html">Research positions</a></li>
-        <li><a href="media.html">Media</a></li>
-        <li><a href="misc.html">Misc.</a></li>
-      </ul>
-    </div>
-  </nav>
-
+  <nav aria-label="Site"><div class="wrap"><ul><li><a href="index.html">Home</a></li><li><a href="research.html" aria-current="page">Research</a></li><li><a href="cv.html">CV</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="education.html">Education</a></li><li><a href="ra-positions.html">Research positions</a></li><li><a href="media.html">Media</a></li><li><a href="misc.html">More</a></li></ul></div></nav>
   <main class="wrap" id="main">
+
     <h1>Research</h1>
     <p class="lede">Macroeconomics, monetary and fiscal policy, and international economics.</p>
 
@@ -131,44 +26,37 @@
 
     <h3>Unequal Transmission: Monetary Policy and Household Consumption in India</h3>
     <p class="meta">with <a href="https://www.aditi-singh.com/research">Aditi Singh</a> · July 2025 (first version December 2024) · <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5615250">Draft on SSRN</a></p>
-    <details>
-      <summary>Abstract</summary>
+    <details><summary>Abstract</summary>
       <p>This paper examines the real effects of monetary policy in India through the lens of household-level heterogeneity. Using detailed microdata on consumption and asset holdings, we show that monetary policy shocks have significant effects on household consumption. Importantly, these effects vary systematically with households' positions in the wealth distribution. Households facing tighter financial constraints—those with limited liquid assets—exhibit stronger consumption responses to monetary policy shocks. By linking consumption data with asset portfolio information, we highlight the role of financial heterogeneity in shaping the transmission of monetary policy. Our findings underscore the importance of accounting for household-level differences in wealth and liquidity when evaluating the effectiveness of monetary policy.</p>
       <p class="presented">Presented at SERI, Shiv Nadar IoE, Ashoka University, Delhi School of Economics and Hamilton College.</p>
     </details>
 
     <h3>Identifying Hand-to-Mouth Households: Evidence from India</h3>
     <p class="meta">with Vivek Gupta and <a href="https://www.aditi-singh.com/research">Aditi Singh</a> · July 2025 (first version October 2024) · <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5559305">Draft on SSRN</a></p>
-    <details>
-      <summary>Abstract</summary>
+    <details><summary>Abstract</summary>
       <p>This paper identifies the share of poor and wealthy hand-to-mouth (HtM) households in India. Wealthy HtM households hold substantial illiquid assets—such as housing and gold jewelry—but have limited liquid wealth, including cash and checking accounts. In contrast, poor HtM households lack both liquid and illiquid assets. We combine consumption and income data from CMIE with asset portfolio data from AIDIS using machine learning techniques, and apply the classification methodology of Kaplan, Violante, and Weidner (2014) to categorize households. We find that 47% of Indian households are hand-to-mouth, out of which 85% are wealthy HtM and 15% are poor HtM. While wealthy HtM households resemble non-HtM households in demographics and asset holdings, they exhibit high marginal propensities to consume out of transitory income shocks, similar to poor HtM households.</p>
       <p class="presented">Presented at Shiv Nadar IoE, Ashoka University, Delhi School of Economics and Hamilton College.</p>
     </details>
 
     <h3>Optimal Time-Consistent Monetary Policy and Sovereign Debt Currency Denomination</h3>
     <p class="meta">Single-authored · January 2023 · <a href="assets/papers/pizzolon-sovereign-debt-currency-denomination.pdf">PDF</a></p>
-    <details>
-      <summary>Abstract</summary>
+    <details><summary>Abstract</summary>
       <p>In the past two decades, the share of external sovereign debt in emerging economies denominated in foreign currency has fallen. I document that in Brazil, Colombia, Mexico and Peru, foreign currency debt was mainly substituted by debt denominated in local currency, while indexed debt represented a small proportion. In Uruguay, on the contrary, foreign currency debt was largely substituted by inflation-indexed debt. To study these differences, I use a small open economy model in which each period, a government that cannot default and lacks commitment optimally chooses inflation and the issuance of foreign currency, local currency and inflation-indexed debt. The choice of debt currency denomination balances hedging benefits and costs implied by each type of bond. On one hand, the exchange rate features a negative correlation with tradable endowment, making local currency and indexed debt useful securities in terms of hedging. On the other hand, the government is tempted to use inflation surprises (local currency debt) and real exchange rate depreciation surprises (local currency and indexed debt) to dilute the value of its debt. Foreign currency debt acts as a commitment device, because its value cannot be diluted. I derive analytical expressions to gain insight into the nature of these trade-offs and solve the model numerically to explain the difference in currency composition across countries. Large external debt-to-GDP ratios, long debt duration, and low inflation costs encourage more borrowing in inflation-indexed bonds and can explain the larger share of inflation-indexed debt in Uruguay compared to other Latin American countries.</p>
     </details>
 
     <h2>Work in progress</h2>
-
     <h3>High-Frequency MPCs and the Transmission of Monetary Policy</h3>
     <p class="meta">with <a href="https://www.aditi-singh.com/research">Aditi Singh</a></p>
-
     <h3>Optimal Monetary and Fiscal Policy under Commitment: The Role of Maturity Structure and Currency Denomination of Government Bonds</h3>
     <p class="meta">Thesis chapter, 2023</p>
 
     <h2>Publications</h2>
-
     <h3>Macroeconomics</h3>
     <ol>
       <li><a href="https://publications.iadb.org/publications/spanish/viewer/Crecimiento-econ%C3%B3mico-y-brechas-de-desarrollo-en-Uruguay.pdf">Economic Growth and Development Gaps in Uruguay</a>, with D. Hernaiz, V. Queijo and P. Regueira, supervised by E. Borensztein. IDB Dialogue Note, prepared as part of the Strategy with Uruguay 2015–2020.</li>
       <li><a href="https://publications.iadb.org/publications/english/viewer/Assessing-Different-Methodologies-for-the-Estimation-of-Uruguay-Structural-Fiscal-Balance.pdf">Assessing Different Methodologies for the Estimation of Uruguay's Structural Fiscal Balance</a>, with A. Rasteletti. IDB Technical Note IDB-TN-598.</li>
       <li><a href="https://idl-bnc-idrc.dspacedirect.org/bitstream/handle/10625/47467/IDL-47467.pdf">Policy brief: Fiscal Space and Pro-Growth Policy Coordination in the MERCOSUR</a>, with D. Aboal. CINVE, Red Mercosur de Investigaciones Económicas.</li>
     </ol>
-
     <h3>Tourism and growth</h3>
     <ol>
       <li><a href="https://link.springer.com/chapter/10.1007/978-3-030-59675-0_7">Testing the Dynamic Relationship Among CO2 Emissions, Economic Growth, Energy Consumption and Tourism Development: Evidence for Uruguay</a>, with J. G. Brida and B. Lanzilotta. In Balsalobre-Lorente D., Driha O. M., Shahbaz M. (Eds.), <em>Sustainable Tourism, Economic Growth and Clean Energy Strategies</em>. Springer, Cham.</li>
@@ -205,15 +93,8 @@
       <div><dt>2025</dt><dd>"Fiscal Inflation with Incomplete Information" by Abhiprerna Smit. Shiv Nadar University Fourth Macroeconomics Conference.</dd></div>
       <div><dt>2024</dt><dd>"Exploring Monetary Policy with Imperfect Credibility: The Case of Uruguay" by Patricia Carballo. XXXIX Annual Economic Conference of the Central Bank of Uruguay.</dd></div>
     </dl>
-
     <p class="note">IDB: Inter-American Development Bank. CINVE: Center for Economic Research.</p>
   </main>
-
-  <footer>
-    <div class="wrap">
-      Fiorella Pizzolon · <a href="mailto:pizzolon@hamilton.edu">pizzolon@hamilton.edu</a> · <a href="https://www.hamilton.edu/academics/our-faculty/directory/faculty-detail/fiorella-pizzolon">Hamilton College profile</a>
-    </div>
-  </footer>
-
+  <footer><div class="wrap">Fiorella Pizzolon · <a href="mailto:pizzolon@hamilton.edu">pizzolon@hamilton.edu</a> · <a href="https://www.hamilton.edu/academics/our-faculty/directory/faculty-detail/fiorella-pizzolon">Hamilton College profile</a></div></footer>
 </body>
 </html>

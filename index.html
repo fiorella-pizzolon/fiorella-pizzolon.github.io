@@ -12,193 +12,27 @@
   <meta property="og:image" content="https://fiorella-pizzolon.github.io/assets/photos/headshot.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #ffffff;
-      --ink: #1c1c1c;
-      --muted: #5a5a5a;
-      --rule: #e2e2e2;
-      --accent: #1f4a6e;
-      --accent-soft: #eef3f7;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #161616;
-        --ink: #ececec;
-        --muted: #a8a8a8;
-        --rule: #333;
-        --accent: #8fb8dc;
-        --accent-soft: #1f2a33;
-      }
-    }
-
-    * { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
-      font-size: clamp(1.05rem, 0.95rem + 0.4vw, 1.2rem);
-      line-height: 1.6;
-    }
-    a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-    a:hover { text-decoration-thickness: 2px; }
-    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
-    img { max-width: 100%; height: auto; display: block; }
-
-    .wrap {
-      width: min(100% - 2.5rem, 42rem);
-      margin: 0 auto;
-    }
-
-    /* Top navigation: horizontally scrollable on narrow screens instead of wrapping into a pile */
-    nav {
-      border-bottom: 1px solid var(--rule);
-      position: sticky;
-      top: 0;
-      background: var(--bg);
-      z-index: 1;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0.75rem 0;
-      display: flex;
-      gap: 1.25rem;
-      overflow-x: auto;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-    }
-    nav ul::-webkit-scrollbar { display: none; }
-    nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
-    nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
-
-    header {
-      padding: 2.5rem 0 1.5rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-      align-items: start;
-    }
-    @media (min-width: 40rem) {
-      header { grid-template-columns: 1fr 9.5rem; gap: 2.5rem; }
-    }
-    header img {
-      width: 7.5rem;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-    @media (min-width: 40rem) {
-      header img { width: 100%; border-radius: 4px; order: 2; }
-    }
-    h1 {
-      font-size: clamp(2rem, 1.5rem + 2.5vw, 2.9rem);
-      font-weight: 600;
-      line-height: 1.1;
-      margin: 0 0 0.4rem;
-      letter-spacing: -0.01em;
-    }
-    .role { margin: 0; color: var(--muted); }
-    .bio { margin: 1.25rem 0 0; max-width: 34rem; }
-
-    /* Section links: one row each, full-width tap targets on phones */
-    .sections {
-      list-style: none;
-      margin: 0.5rem 0 0;
-      padding: 0;
-      border-top: 1px solid var(--rule);
-    }
-    .sections li { border-bottom: 1px solid var(--rule); }
-    .sections a {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 1rem;
-      padding: 0.9rem 0;
-      text-decoration: none;
-      color: var(--ink);
-    }
-    .sections a:hover { background: var(--accent-soft); margin: 0 -0.75rem; padding-left: 0.75rem; padding-right: 0.75rem; }
-    .sections span { color: var(--muted); font-size: 0.92rem; text-align: right; }
-    @media (max-width: 30rem) {
-      .sections a { flex-direction: column; gap: 0.15rem; align-items: flex-start; }
-      .sections span { text-align: left; }
-    }
-
-    .contact {
-      margin: 2.5rem 0 3rem;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-    .contact p { margin: 0.25rem 0; }
-
-    footer {
-      border-top: 1px solid var(--rule);
-      padding: 1.25rem 0 2rem;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <nav aria-label="Site">
-    <div class="wrap">
-      <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="ra-positions.html">Research positions</a></li>
-        <li><a href="media.html">Media</a></li>
-        <li><a href="misc.html">Misc.</a></li>
-      </ul>
-    </div>
-  </nav>
-
+  <nav aria-label="Site"><div class="wrap"><ul><li><a href="index.html" aria-current="page">Home</a></li><li><a href="research.html">Research</a></li><li><a href="cv.html">CV</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="education.html">Education</a></li><li><a href="ra-positions.html">Research positions</a></li><li><a href="media.html">Media</a></li><li><a href="misc.html">More</a></li></ul></div></nav>
   <main class="wrap" id="main">
-    <header>
+
+    <header class="hero">
       <div>
         <h1>Fiorella Pizzolon</h1>
         <p class="role">Assistant Professor of Economics, Hamilton College</p>
-        <p class="bio">
-          I work on macroeconomics, monetary and fiscal policy, and international
-          economics. My recent research studies how emerging economies choose the currency
-          denomination of their sovereign debt, and how monetary policy reaches households
-          differently across the wealth distribution. I received my Ph.D. in Economics from
-          the University of Virginia.
-        </p>
+        <p class="bio">I work on macroeconomics, monetary and fiscal policy, and international economics. My recent research studies how emerging economies choose the currency denomination of their sovereign debt, and how monetary policy reaches households differently across the wealth distribution. I received my Ph.D. in Economics from the University of Virginia.</p>
       </div>
-      <img src="assets/photos/headshot.jpg" alt="Portrait of Fiorella Pizzolon" width="400" height="400">
+      <img src="assets/photos/headshot.jpg" alt="Portrait of Fiorella Pizzolon" width="200" height="200">
     </header>
-
-    <ul class="sections">
-      <li><a href="research.html">Research <span>Working papers and publications</span></a></li>
-      <li><a href="cv.html">Curriculum vitae <span>PDF</span></a></li>
-      <li><a href="teaching.html">Teaching <span>Courses and advising</span></a></li>
-      <li><a href="education.html">Education <span>Degrees and dissertation</span></a></li>
-      <li><a href="ra-positions.html">Research positions <span>UVA, IDB, CINVE</span></a></li>
-      <li><a href="media.html">Media <span>Talks and interviews</span></a></li>
-      <li><a href="misc.html">Miscellaneous <span>Photos</span></a></li>
-    </ul>
-
     <div class="contact">
       <p><a href="mailto:pizzolon@hamilton.edu">pizzolon@hamilton.edu</a></p>
       <p>Department of Economics, Hamilton College<br>198 College Hill Road, Clinton, NY 13323</p>
-      <p>On leave from Hamilton College during the 2026–27 academic year (fall 2026 and spring 2027).</p>
+      <p>On leave from Hamilton College during the 2026–27 academic year.</p>
     </div>
   </main>
-
-  <footer>
-    <div class="wrap">
-      Fiorella Pizzolon · <a href="https://www.hamilton.edu/academics/our-faculty/directory/faculty-detail/fiorella-pizzolon">Hamilton College profile</a>
-    </div>
-  </footer>
-
+  <footer><div class="wrap">Fiorella Pizzolon · <a href="mailto:pizzolon@hamilton.edu">pizzolon@hamilton.edu</a> · <a href="https://www.hamilton.edu/academics/our-faculty/directory/faculty-detail/fiorella-pizzolon">Hamilton College profile</a></div></footer>
 </body>
 </html>
